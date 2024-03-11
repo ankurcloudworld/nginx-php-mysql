@@ -11,7 +11,7 @@ sudo sed -i 's/# server_tokens off;/server_tokens off;/' /etc/nginx/nginx.conf
 read -p "Enter PHP version to install (e.g. 7.4): " php_version
 sudo add-apt-repository ppa:ondrej/php -y
 sudo apt update
-sudo apt install php$php_version-fpm php$php_version-mysql php$php_version-curl php$php_version-gd php$php_version-mbstring php$php_version-xml php$php_version-xmlrpc>
+sudo apt install php$php_version-fpm php$php_version-mysql php$php_version-curl php$php_version-gd php$php_version-mbstring php$php_version-xml php$php_version-xmlrpc
 
 # Install MySQL server
 sudo apt install mysql-server -y
